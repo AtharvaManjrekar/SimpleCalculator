@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz -- Level 1 -- Task 2</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+</head>
+
+<body>
+    <div class="btn-color">
+        <label for="cc-btn" class="btn-color-change">Night Mode</label>
+        <input type="checkbox" class="btn-color-change" id="cc-btn">
+    </div>
+
+<div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display1">
+                </div>
+                <div class="below">
+                    <input type="button" value="Ac" class="form-input" onclick="display1.value='' ">
+                    <input type="button" value="Del" class="form-input"
+                        onclick="display1.value = display1.value.toString().slice(0,-1)">
+                    <input type="button" value="." class="form-input" onclick="display1.value+='.' ">
+                    <input type="button" value="/" class="form-input" onclick="display1.value+='/' ">
+                </div>
+
+                <div>
+                    <input type="button" value="7" class="form-input" onclick="display1.value+='7'  ">
+                    <input type="button" value="8" class="form-input" onclick="display1.value+='8' ">
+                    <input type="button" value="9" class="form-input" onclick="display1.value+='9' ">
+                    <input type="button" value="*" class="form-input" onclick="display1.value+='*' ">
+                </div>
+
+                <div>
+                    <input type="button" value="4" class="form-input" onclick="display1.value+='4' ">
+                    <input type="button" value="5" class="form-input" onclick="display1.value+='5' ">
+                    <input type="button" value="6" class="form-input" onclick="display1.value+='6' ">
+                    <input type="button" value="-" class="form-input" onclick="display1.value+='-' ">
+                </div>
+
+                <div>
+                    <input type="button" value="1" class="form-input" onclick="display1.value+='1' ">
+                    <input type="button" value="2" class="form-input" onclick="display1.value+='2' ">
+                    <input type="button" value="3" class="form-input" onclick="display1.value+='3' ">
+                    <input type="button" value="+" class="form-input" onclick="display1.value+='+' ">
+                </div>
+
+                <div>
+                    <input type="button" value="00" class="form-input" onclick="display1.value+='00'">
+                    <input type="button" value="0" class="form-input" onclick="display1.value+='0'">
+                    <input type="button" value="=" class="form-input" id="equal"
+                        onclick="display1.value = eval(display1.value)">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
